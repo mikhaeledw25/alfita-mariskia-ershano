@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Made For You</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <audio id="bgMusic" loop>
+    <source
+      src="https://cdn.pixabay.com/download/audio/2022/10/30/audio_8d9c6e65e3.mp3?filename=lofi-study-112191.mp3"
+      type="audio/mpeg"
+    />
+  </audio>
+
+  <section class="start-screen" id="startScreen">
+    <div class="start-card">
+      <h1>Made For You</h1>
+      <p>Website kecil yang dibuat khusus untuk seseorang yang spesial.</p>
+      <button id="startBtn">Mulai</button>
+    </div>
+  </section>
+
+  <section class="countdown-screen hidden" id="countdownScreen">
+    <div class="countdown-number" id="countdownNumber">3</div>
+  </section>
+
+  <button class="music-btn" id="musicBtn">▶</button>
+
+  <main class="main-page">
+    <div class="main-content">
+      <h1 class="main-title" id="mainTitle">
+        I Love You
+      </h1>
+
+      <p class="main-subtitle" id="mainSubtitle">
+        Setiap cerita kecil tentang kamu selalu menjadi bagian paling indah.
+      </p>
+
+      <button class="open-book-btn" id="openBookBtn">
+        📖 Buka Scrapbook
+      </button>
+    </div>
+  </main>
+
+  <section class="scrapbook-overlay hidden" id="scrapbookOverlay">
+
+    <button class="close-book-btn" id="closeBookBtn">✕</button>
+
+    <div class="scrapbook">
+
+      <div class="book-side book-left">
+        <div class="page-decoration tape tape-one"></div>
+        <div class="page-decoration sticker-heart">♡</div>
+
+        <h2 id="bookPageTitle">Our Memories</h2>
+
+        <div class="photo-card">
+          <img id="bookImage" src="foto/foto1.jpg" alt="Scrapbook Photo" />
+          <span id="bookPhotoCaption">memory photo</span>
+        </div>
+      </div>
+
+      <div class="book-side book-right">
+        <div class="page-decoration tape tape-two"></div>
+
+        <p id="bookMessage">
+          Terima kasih sudah hadir di hidupku. Setiap momen kecil terasa lebih indah karena ada kamu.
+        </p>
+
+        <div class="book-date" id="bookDate">
+          Made with love
+        </div>
+
+        <div class="book-nav">
+          <button id="prevPageBtn">← Prev</button>
+          <button id="nextPageBtn">Next →</button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
